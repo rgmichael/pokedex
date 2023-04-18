@@ -24,7 +24,7 @@
                         </div>
                         <div class="col-sm-6">
                             <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{{pokemon.id}}.png" alt=""
-                                class="img-fluid d-block mx-auto" style="width: 300px;">
+                            class="slideInDown" style="width: 300px;">
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                     <h3 style="text-align: center;">Related Evolutions</h3>
                     <div class="row">
                         <div *ngFor="let evolution of pokemon.evolutions" class="col-sm mb-3">
-                            <div class="card" [routerLink]="['/view', evolution.name]">
+                            <div class="card">
                                 <div class="card-body">
                                     <h4 class="card-title text-center mb-3">{{evolution.name | titlecase}}</h4>
                                     <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{{evolution.id}}.png" alt=""
